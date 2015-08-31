@@ -22,10 +22,10 @@ sudo apt-get install build-essential			# Build Linux Essentials.Might be coverd 
 sudo apt-get -y install synaptic gtk2-engines-pixbuf libcanberra-gtk-module packageKit-gtk3-module gnome-themes-standard xpad
 
 #Flags
-sudo mkdir /usr/share/icons/flags
-cd /usr/share/icons/flags
-sudo wget http://suservice.net/icons/flags2/{ru,us}.png
-gsettings set org.gnome.libgnomekbd.indicator show-flags true
+# sudo mkdir /usr/share/icons/flags
+# cd /usr/share/icons/flags
+# sudo wget http://suservice.net/icons/flags2/{ru,us}.png
+# gsettings set org.gnome.libgnomekbd.indicator show-flags true
 
 #4k normal fonts
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.15

@@ -16,6 +16,19 @@ echo "Everything is not installed here.Linux Headers are to be installed manuall
 
 cmd='sudo apt-get update && sudo apt-get upgrade'		# What's a script without upgrade ;)
 eval cmd
+
+sudo apt-get install linux-firmware-nonfree xclip dtrx		# Essentials
+
+# Kernel Image Install
+sudo mkdir /tmp/kernel
+cd /tmp/kernel
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.0-vivid/linux-headers-4.0.0-040000-generic_4.0.0-040000.201504121935_amd64.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.0-vivid/linux-headers-4.0.0-040000_4.0.0-040000.201504121935_all.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.0-vivid/linux-image-4.0.0-040000-generic_4.0.0-040000.201504121935_amd64.deb
+
+# Installing images
+sudo dpkg -i *.deb
+
 sudo apt-get install build-essential			# Build Linux Essentials.Might be coverd in upgrade
 
 #Fix gtk themes bug
@@ -154,13 +167,13 @@ echo ""
 echo "Other DEB packages include : "
 echo "- nginx"
 echo "- libre-office"
-echo "- linux-headers and image preferably 4.0.0"
+echo "- linux-headers and image preferably 4.0.0 - Done "
 echo "- Uget,Atom,Sublime should be installed if not download DEB and install"
 echo "- indicator-Workspaces"
 echo "- indicator-synapse"
 echo "- Android Studio"
 echo "- bashrc patches"
-echo ""
+echo "- zsh install with oh-my-zsh"
 echo ""
 echo "More things to do : "
 echo ""
@@ -170,7 +183,7 @@ echo "- Add the backbox install methods to the install script"
 echo "- Edit Fstab for NTFS automount"
 echo "- Add xpad,tlp to startup items"
 echo "- Add open_terminal_here,open_as_root to context"
-echo ""
+echo "- Install Atom Theme,Fix Wifi Solutions from Git Repo"
 echo ""
 echo "#######################################################################"
 echo "                       Default Setup Complete                          "

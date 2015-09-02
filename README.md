@@ -34,6 +34,8 @@ sudo reboot
 
 After installing git you can run the following things for better git experience :
 
+It will prompt only for password! Yayy!! Too Lazy 
+
 ```
 
 git config --global url."https://rrevanth@github.com".insteadOf "https://github.com"

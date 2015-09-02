@@ -24,7 +24,7 @@ alias ports='netstat -tulanp'
 alias reboot='sudo /sbin/reboot'
 alias poweroff='sudo /sbin/poweroff'
 alias halt='sudo /sbin/halt'
-alias shutdown='sudo /sbin/shutdown'
+alias shutdown='sudo /sbin/shutdown 0'
 
 
 # also pass it via sudo so whoever is admin can reload it without calling you #
@@ -41,3 +41,9 @@ alias wget='wget -c'
 ## set some other defaults ##
 alias df='df -H'
 alias du='du -ch'
+
+#  ------------------
+#  PROCESS MANAGEMENT
+#  ------------------
+
+alias startup_services="ls /etc/rc2.d/* | grep S | awk '{sub(\"S\",\" \"); print \$2}'"

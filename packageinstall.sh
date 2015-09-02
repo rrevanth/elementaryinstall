@@ -40,8 +40,10 @@ sudo apt-get -y install synaptic gtk2-engines-pixbuf libcanberra-gtk-module pack
 # sudo wget http://suservice.net/icons/flags2/{ru,us}.png
 # gsettings set org.gnome.libgnomekbd.indicator show-flags true
 
+#Cursor disappear fix
+gsettings set org.gnome.settings-daemon.plugins.cursor active false
 #4k normal fonts
-gsettings set org.gnome.desktop.interface text-scaling-factor 1.0x`5
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.05
 
 sudo apt-get -y install vim git aria2 uget elementaryplus
 

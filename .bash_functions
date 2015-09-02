@@ -25,6 +25,16 @@ showa () { /usr/bin/grep --color=always -i -a1 $@ ~/.bash_aliases | grep -v '^\s
 
 zipf () { zip -r "$1".zip "$1" ; }          	# zipf:         To create a ZIP archive of a folder
 
+# LS Alias functions
+
+lsd () {
+        if [[ -z $1 ]] ; then
+                command ls -alF | grep /$
+        else
+                command ls -alF "$1" | grep /$
+        fi
+}
+
 # numFiles:     Count of non-hidden files in current dir
 numFiles () { 
 	if [[ -z $1 ]] ; then
@@ -68,15 +78,3 @@ my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
 grabhttpHeaders () { /usr/bin/curl -I -L $@ ; }             # httpHeaders:      Grabs headers from web page
 
 ccontent () { cat '$@' |xclip -i -selection clipboard ; }	# Copy Contents of file to clipboard
-
-
-# LS Alias functions
-
-lsd () {
-	if [[ -z $1 ]] ; then
-		command ls -alF | grep /$
-	else
-		command ls -alF "$1" | grep /$
-	fi
-}
-

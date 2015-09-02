@@ -50,10 +50,12 @@ cmd='sudo apt-get install elementary-tweaks nutty skype transmission rar unrar p
 eval cmd
 
 # RVM and Ruby Installer
-command curl -sSL https://rvm.io/mpapis.asc | gpg --import -
-curl -sSL https://get.rvm.io | bash -s stable
-rvm get stable --auto-dotfiles
+#command curl -sSL https://rvm.io/mpapis.asc | gpg --import -
+#curl -sSL https://get.rvm.io | bash -s stable
+#rvm get stable --auto-dotfiles
 #echo "source $HOME/.rvm/scripts/rvm" >> ~/.bash_profile
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+\curl -sSL https://get.rvm.io | bash -s stable --rails
 
 # NVM and node install
 curl https://raw.githubusercontent.com/creationix/nvm/v0.11.1/install.sh | bash

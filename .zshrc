@@ -57,7 +57,7 @@ plugins=(git)
 export NVM_DIR="/home/raven/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-export PATH="/home/raven/.rvm/gems/ruby-2.2.1/bin:/home/raven/.rvm/gems/ruby-2.2.1@global/bin:/home/raven/.rvm/rubies/ruby-2.2.1/bin:/home/raven/.nvm/v0.10.40/bin:/home/raven/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/raven/.rvm/bin"
+export PATH="$PATH:/home/raven/.rvm/gems/ruby-2.2.1/bin:/home/raven/.rvm/gems/ruby-2.2.1@global/bin:/home/raven/.rvm/rubies/ruby-2.2.1/bin:/home/raven/.nvm/v0.10.40/bin:/home/raven/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/raven/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # ADD ~/opt to PATH

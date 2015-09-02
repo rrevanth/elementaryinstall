@@ -43,7 +43,7 @@ sudo apt-get -y install synaptic gtk2-engines-pixbuf libcanberra-gtk-module pack
 #4k normal fonts
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.0x`5
 
-sudo apt-get -y install vim git aria2 uget
+sudo apt-get -y install vim git aria2 uget elementaryplus
 
 # Packages I need :)
 cmd='sudo apt-get install elementary-tweaks nutty skype transmission rar unrar p7zip-rar p7zip sharutils uudeview mpack arj cabextract lzip lunzip oracle-java8-installer oracle-java8-set-default oracle-java8-unlimited-jce-policy flashplugin-installer pepperflashplugin-nonfree vlc ubuntu-restricted-extras ffmpeg gstreamer0.10-plugins-ugly libavcodec-extra-54 libvdpau-va-gl1 libmad0 mpg321 gstreamer1.0-libav tlp tlp-rdw rar hourglass relay elementary-plus footnote configurator evnc feedreader go-for-it envelope vocal taxi power-installer nasc anoise apt-fast axel'
@@ -159,7 +159,6 @@ sudo apt-get -y install plank-theme-rainier
 sudo apt-get -y install numix-icon-theme numix-icon-theme-circle numix-icon-theme-bevel
 sudo apt-get -y install captiva-icon-theme
 sudo apt-get -y install ieos7-icons
-sudo apt-get -y install elementaryplus
 
 theme_icons
 

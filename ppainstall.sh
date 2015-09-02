@@ -12,7 +12,6 @@ if (($EUID != 0)); then
 fi
 
 # PPA for elementary tweaks
-curl -sL http://i-hate-farms.github.io/spores/install | sudo bash -
 sudo add-apt-repository -y ppa:linrunner/tlp					# PPA for Power Saving things
 sudo apt-add-repository -y ppa:mc3man/trusty-media
 sudo add-apt-repository -y ppa:webupd8team/java					# Java PPA
@@ -38,6 +37,12 @@ sudo add-apt-repository -y ppa:yannubuntu/boot-repair			# PPA for boot-repair
 sudo add-apt-repository -y ppa:elementaryos-fr-community/ppa 	# Community PPA
 sudo apt-add-repository -y ppa:numix/ppa 						# PPA for Numix Theme
 sudo add-apt-repository -y ppa:captiva/ppa 						# PPA for Captiva Icons
+
+# PPA import and Install for Elementary Tweaks
+curl -sL http://i-hate-farms.github.io/spores/install | sudo bash -
+
+
+sudo add-apt-repository -y ppa:cybre/elementaryplus			# PPA for elementaryplus
 
 # Popular ARC theme adding to source list
 sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_15.04/ /' >> /etc/apt/sources.list.d/arc-theme.list"

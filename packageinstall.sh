@@ -55,7 +55,7 @@ eval cmd
 #rvm get stable --auto-dotfiles
 #echo "source $HOME/.rvm/scripts/rvm" >> ~/.bash_profile
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-\curl -sSL https://get.rvm.io | bash -s stable --rails
+curl -sSL https://get.rvm.io | bash -s stable --autolibs=enabled --rails --ruby
 
 # NVM and node install
 curl https://raw.githubusercontent.com/creationix/nvm/v0.11.1/install.sh | bash

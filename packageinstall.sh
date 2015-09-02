@@ -41,7 +41,7 @@ sudo apt-get -y install synaptic gtk2-engines-pixbuf libcanberra-gtk-module pack
 # gsettings set org.gnome.libgnomekbd.indicator show-flags true
 
 #4k normal fonts
-gsettings set org.gnome.desktop.interface text-scaling-factor 1.05
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.0x`5
 
 sudo apt-get -y install vim git aria2 uget
 
@@ -61,9 +61,6 @@ nvm install 0.10.40
 nvm alias default 0.10.40
 nvm use default
 
-# Install Sails JS
-sudo npm -g install sails
-
 sudo /usr/share/doc/libdvdread4/install-css.s­h	# Enable DVD Playback
 sudo apt-get install ttf-mscorefonts-installer	# Microsoft Fonts
 sudo apt-get install libavcodec-extra-53		# Itunes compatibility Codec
@@ -78,6 +75,12 @@ sudo apt-get -y install atom					# ATOM editor
 sudo apt-get install virtualenv
 sudo apt-get install virtualenvwrapper
 
+
+##
+## Node and IoJS install for root
+##
+sudo apt-get install nodejs
+sudo apt-get install iojs
 
 ##
 ## Setup the Solarized Dark theme for gnome-terminal but not right now :D
@@ -117,8 +120,14 @@ sudo apt-get install darktable					# Darktable
 sudo apt-get install rapid-photo-downloader		# Rapid Photo Downloader
 
 
+
+# Install Sails JS
+sudo npm -g install sails
+
 # Install Metoer JS & Meteor Kitchen
 curl https://install.meteor.com/ | bash
+
+curl http://www.meteorkitchen.com/install | /bin/sh
 
 
 # Themes

@@ -59,6 +59,12 @@ wget -q "http://deb.playonlinux.com/public.gpg" -O- | sudo apt-key add -
 sudo wget http://deb.playonlinux.com/playonlinux_trusty.list -O /etc/apt/sources.list.d/playonlinux.list
 sudo add-apt-repository -y ppa:wfg/0ad
 
+# PPA for NodeJS
+curl -sL https://deb.nodesource.com/setup_0.12 | sudo -E bash -
+
+# PPA for ioJS addition to Node for ES6 compatibility
+curl -sL https://deb.nodesource.com/setup_iojs_3.x | sudo -E bash -
+
 
 # sudo add-apt-repository -y ppa:eviltwin1/feedreader-stable	: Backup PPA for feedreader
 # sudo add-apt-repository -y ppa:webupd8team/sublime-text-3		: Backup PPA for sublime

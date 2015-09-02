@@ -41,7 +41,7 @@ sudo apt-get -y install synaptic gtk2-engines-pixbuf libcanberra-gtk-module pack
 # gsettings set org.gnome.libgnomekbd.indicator show-flags true
 
 #4k normal fonts
-gsettings set org.gnome.desktop.interface text-scaling-factor 1.15
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.05
 
 sudo apt-get -y install vim git aria2 uget
 

@@ -41,8 +41,9 @@ sudo add-apt-repository -y ppa:captiva/ppa 						# PPA for Captiva Icons
 
 # Popular ARC theme adding to source list
 sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_15.04/ /' >> /etc/apt/sources.list.d/arc-theme.list"
-wget -nv http://download.opensuse.org/repositories/isv:/ownCloud:/community:/8.0/xUbuntu_12.04/Release.key -O Release.key
+wget http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_15.04/Release.key
 sudo apt-key add - < Release.key
+
 
 sudo add-apt-repository -y ppa:me-davidsansome/clementine		# PPA for clementine
 sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager

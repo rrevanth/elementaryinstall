@@ -29,3 +29,16 @@ sudo echo "options ath10k_core skip_otp=y" >> /etc/modprobe.d/ath10k.conf
 sudo reboot
 
 # Voila,Now you have WIFI and most of the bugs are fixed!!
+
+# Other optimizations for the system
+
+After installing git you can run the following things for better git experience :
+
+```
+
+git config --global url."https://rrevanth@github.com".insteadOf "https://github.com"
+
+git config --global credential.helper 'cache --timeout=28800'
+
+```
+inplace of rrevanth@github.com,use yourusername@github.com

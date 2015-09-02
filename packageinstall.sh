@@ -132,6 +132,9 @@ curl https://install.meteor.com/ | bash
 
 curl http://www.meteorkitchen.com/install | /bin/sh
 
+# Gcloud SDK Install
+curl https://sdk.cloud.google.com | bash
+
 
 # Themes
 

@@ -2,9 +2,15 @@
 #  Git Tweaks
 #  ----------
 lazygit() {
-	git add .
-	git commit -a -m "$1"
-	git push
+        if [[ -z $1 ]] ; then
+        	git add .
+        	git commit -a
+        	git push
+	else
+        	git add .
+        	git commit -a -m "$1"
+        	git push
+	fi
 }
 
 #   mans:   Search manpage given in agument '1' for term given in argument '2' (case insensitive)
@@ -73,8 +79,6 @@ findPid () { lsof -t -c "$@" ; }
 #   my_ps: List processes owned by my user:
 #   ------------------------------------------------------------
 my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
-
-
 grabhttpHeaders () { /usr/bin/curl -I -L $@ ; }             # httpHeaders:      Grabs headers from web page
 
 ccontent () { cat '$@' |xclip -i -selection clipboard ; }	# Copy Contents of file to clipboard

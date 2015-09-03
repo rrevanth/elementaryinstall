@@ -1,11 +1,14 @@
 #!/bin/bash
 
 # Setting MTU to 1200 so ec2 ssh can be done with some routers and in some networks
-echo "Enter the MTU value less than 1500 that you want to set for eth and wlan followed by [ENTER]:"
-read mtuval
-read -p "Set value for LAN? " -n 1 -r
-echo "
-"
+if [[ "$1" != "" ]]; then
+    mtuval=$1
+else
+	echo "Enter the MTU value less than 1500 that you want to set for eth and wlan followed by [ENTER]:"
+	read mtuval
+fi
+read -p "Set value $mtuval for LAN? " -n 1 -r
+echo ""
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
 	# Setting MTU value for elan0
@@ -15,7 +18,7 @@ then
 else
 	echo "Skipping elan0"
 fi
-read -p "Set value for WLAN? " -n 1 -r
+read -p "Set value $mtuval for WLAN? " -n 1 -r
 echo "
 "
 if [[ $REPLY =~ ^[Yy]$ ]]

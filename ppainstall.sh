@@ -89,6 +89,10 @@ sudo add-apt-repository -y ppa:fkrull/deadsnakes
 
 sudo add-apt-repository -y ppa:noobslab/icons
 
+
+# PPA of Nate Carlson Maven3
+sudo add-apt-repository -y "deb http://ppa.launchpad.net/natecarlson/maven3/ubuntu precise main"
+sudo apt-key adv –keyserver keyserver.ubuntu.com –recv-keys B70731143DD9F856
 : <<'backbox_install'
 
 Backbox PPA can be added to your system manually by copying the lines below to your "/etc/apt/sources.list.d/backbox-four-trusty.list" file:

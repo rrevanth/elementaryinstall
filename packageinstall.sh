@@ -124,7 +124,8 @@ sudo apt-get install clementine					# Clementine Music Player
 sudo apt-get install darktable					# Darktable
 sudo apt-get install rapid-photo-downloader		# Rapid Photo Downloader
 
-
+# AV Codec and some other additions
+sudo apt-get install libavcodec-extra-54 libavcodec-extra-54 aptitude mplayer indicator-multiload gdebi-core
 
 # Install Sails JS
 sudo npm -g install sails

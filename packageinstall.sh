@@ -19,6 +19,8 @@ eval cmd
 
 sudo apt-get install linux-firmware-nonfree xclip dtrx		# Essentials
 
+sudo apt-get install alien dpkg-dev debhelper			# Alien package for RPM installs
+
 # Kernel Image Install
 sudo mkdir /tmp/kernel
 cd /tmp/kernel

@@ -89,6 +89,9 @@ sudo add-apt-repository -y ppa:fkrull/deadsnakes
 
 sudo add-apt-repository -y ppa:noobslab/icons
 
+# PPA for ffmpeg updated for trusty
+sudo add-apt-repository ppa:kirillshkrogalev/ffmpeg-next
+
 
 # PPA of Nate Carlson Maven3
 sudo add-apt-repository -y "deb http://ppa.launchpad.net/natecarlson/maven3/ubuntu precise main"
@@ -123,6 +126,27 @@ sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
 sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ trusty main" >> /etc/apt/sources.list.d/dropbox.list' 
 
 Extras
+
+
+: <<'SecurityToolsPPA'
+
+# These PPA's include about 500+ hacking tools.if you are interested,run these commands
+
+sudo add-apt-repository  ppa:cybersec/chaos-ppa
+sudo add-apt-repository  ppa:cybersec/chaos-ppa-v1
+sudo add-apt-repository  ppa:cybersec/chaos-ppa-v2
+sudo add-apt-repository  ppa:cybersec/test
+sudo add-apt-repository  ppa:cybersec/trojan-horse
+
+			[OR]
+
+sudo add-apt-repository  ppa:darklordpaunik8880/darkminttrustytahr
+sudo add-apt-repository  ppa:darklordpaunik8880/darkminttrustytahr2
+sudo add-apt-repository  ppa:darklordpaunik8880/darkminttrustytahr3
+sudo add-apt-repository  ppa:darklordpaunik8880/darkminttrustytahr4
+
+SecurityToolsPPA
+
 
 sudo apt-get update
 

@@ -153,6 +153,9 @@ sudo apt-get -y install plank-theme-pantiva
 sudo apt-get -y install plank-theme-paperterial.
 sudo apt-get -y install plank-theme-rainier
 sudo apt-get -y install numix-plank-theme
+sudo apt-get -y install plank-theme-pantiva
+sudo apt-get -y install plank-theme-paperterial.
+sudo apt-get -y install plank-theme-rainier
 
 theme_plank
 
@@ -161,9 +164,6 @@ theme_plank
 sudo apt-get -y install paper-icon-theme
 sudo apt-get -y install elementary-add-icon-theme
 sudo apt-get -y install elementary-enhanced
-sudo apt-get -y install plank-theme-pantiva
-sudo apt-get -y install plank-theme-paperterial.
-sudo apt-get -y install plank-theme-rainier
 sudo apt-get -y install numix-icon-theme numix-icon-theme-circle numix-icon-theme-bevel
 sudo apt-get -y install captiva-icon-theme
 sudo apt-get -y install ieos7-icons

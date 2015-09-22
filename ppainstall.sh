@@ -132,18 +132,18 @@ Extras
 
 # These PPA's include about 500+ hacking tools.if you are interested,run these commands
 
-sudo add-apt-repository  ppa:cybersec/chaos-ppa
-sudo add-apt-repository  ppa:cybersec/chaos-ppa-v1
-sudo add-apt-repository  ppa:cybersec/chaos-ppa-v2
-sudo add-apt-repository  ppa:cybersec/test
-sudo add-apt-repository  ppa:cybersec/trojan-horse
+sudo add-apt-repository -y ppa:cybersec/chaos-ppa
+sudo add-apt-repository -y ppa:cybersec/chaos-ppa-v1
+sudo add-apt-repository -y ppa:cybersec/chaos-ppa-v2
+sudo add-apt-repository -y ppa:cybersec/test
+sudo add-apt-repository -y ppa:cybersec/trojan-horse
 
 			[OR]
 
-sudo add-apt-repository  ppa:darklordpaunik8880/darkminttrustytahr
-sudo add-apt-repository  ppa:darklordpaunik8880/darkminttrustytahr2
-sudo add-apt-repository  ppa:darklordpaunik8880/darkminttrustytahr3
-sudo add-apt-repository  ppa:darklordpaunik8880/darkminttrustytahr4
+sudo add-apt-repository -y ppa:darklordpaunik8880/darkminttrustytahr
+sudo add-apt-repository -y ppa:darklordpaunik8880/darkminttrustytahr2
+sudo add-apt-repository -y ppa:darklordpaunik8880/darkminttrustytahr3
+sudo add-apt-repository -y ppa:darklordpaunik8880/darkminttrustytahr4
 
 SecurityToolsPPA
 

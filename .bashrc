@@ -97,12 +97,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# Function definitions
-# Put all function definitions in this file
-if [ -f ~/.bash_functions ]; then
-    . ~/.bash_functions
-fi
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -172,13 +166,16 @@ xterm*|rxvt*)
 *)
     ;;
 esac
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
 # The next line updates PATH for the Google Cloud SDK.
 source '/home/raven/opt/google-cloud-sdk/path.bash.inc'
 
 # The next line enables shell command completion for gcloud.
 source '/home/raven/opt/google-cloud-sdk/completion.bash.inc'
 
-export PATH="$PATH:$HOME/.rvm/bin:$HOME/bin" # Add RVM to PATH for scripting
+# Android SDK export
+export ANDROID_HOME=$HOME/opt/androidSDK
+export NDK_HOME=$HOME/opt/ndk-r10e
+export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$NDK_HOME:${PATH}
 
-
-for d in $HOME/opt/*/bin; do export PATH="$PATH:$d"; done

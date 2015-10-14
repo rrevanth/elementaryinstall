@@ -49,7 +49,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git fuck tmux)
 
 # User configuration
 
@@ -57,11 +57,14 @@ plugins=(git)
 export NVM_DIR="/home/raven/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-export PATH="$PATH:/home/raven/.rvm/gems/ruby-2.2.1/bin:/home/raven/.rvm/gems/ruby-2.2.1@global/bin:/home/raven/.rvm/rubies/ruby-2.2.1/bin:/home/raven/.nvm/v0.10.40/bin:/home/raven/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/raven/.rvm/bin"
+export PATH="/home/raven/.rvm/gems/ruby-2.2.1/bin:/home/raven/.rvm/gems/ruby-2.2.1@global/bin:/home/raven/.rvm/rubies/ruby-2.2.1/bin:/home/raven/.nvm/v0.10.40/bin:/home/raven/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/raven/.rvm/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # ADD ~/opt to PATH
-for d in $HOME/opt/*/bin; do PATH="$PATH:$d"; done
+for d in $HOME/opt/*/bin; do PATH="$d:$PATH"; done
+for d in $HOME/bin/*; do PATH="$d:$PATH"; done
+# Custom PATHS to PATHS
+# PATH="/home/raven/opt/androidSDK/tools:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,3 +105,12 @@ export WORKON_HOME=$HOME/.envs
 export PROJECT_HOME=$HOME/workspace/envDevel
 source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 
+
+# Android SDK export
+export ANDROID_HOME=$HOME/opt/androidSDK
+export NDK_HOME=$HOME/opt/ndk-r10e
+export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$NDK_HOME:${PATH}
+
+
+# Make zsh always use default nvm alias in shell.To change node version permanently.change default with 'nvm alias default nodeversion'
+nvm use default > /dev/null

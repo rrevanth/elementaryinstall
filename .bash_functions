@@ -81,4 +81,10 @@ findPid () { lsof -t -c "$@" ; }
 my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
 grabhttpHeaders () { /usr/bin/curl -I -L $@ ; }             # httpHeaders:      Grabs headers from web page
 
-ccontent () { cat '$@' |xclip -i -selection clipboard ; }	# Copy Contents of file to clipboard
+ccontent () { cat '$@' | xclip -i -selection clipboard ; }	# Copy Contents of file to clipboard
+
+
+#  Some more helpful functions
+#  ----------------------------------
+
+listservers() { awk '{if($1=="Host")k=$2;if($1=="HostName")printf("%s\t\t%s\n",k,$2)}' /home/raven/.ssh/config; }

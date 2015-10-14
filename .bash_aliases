@@ -47,3 +47,23 @@ alias du='du -ch'
 #  ------------------
 
 alias startup_services="ls /etc/rc2.d/* | grep S | awk '{sub(\"S\",\" \"); print \$2}'"
+
+# -----------------
+# WORKSPACE ALIASES
+# -----------------
+
+alias cloopback='cd /home/raven/workspace/privateOutcast/loopback'
+alias cmeteor='cd /home/raven/workspace/privateOutcast/meteor'
+alias csails='cd /home/raven/workspace/privateOutcast/sails'
+alias cofc='cd /home/raven/workspace/ofc'
+alias cworkspace='cd /home/raven/workspace'
+alias cgit='cd /home/raven/workspace/privateOutcast/gitprojects'
+alias clivastar='cd /home/raven/workspace/ofc/dev/Livastar'
+alias cpersonal='cd /home/raven/workspace/privateOutcast'
+
+# -----------------
+# SOME MORE ALIASES
+# -----------------
+
+alias cmusserver='cmus --listen 0.0.0.0'
+alias xrestart='sudo service lightdm restart'

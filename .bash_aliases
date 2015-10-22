@@ -57,7 +57,7 @@ alias cmeteor='cd /home/raven/workspace/privateOutcast/meteor'
 alias csails='cd /home/raven/workspace/privateOutcast/sails'
 alias cofc='cd /home/raven/workspace/ofc'
 alias cworkspace='cd /home/raven/workspace'
-alias cgit='cd /home/raven/workspace/privateOutcast/gitprojects'
+alias cgit='cd /home/raven/workspace/gitprojects'
 alias clivastar='cd /home/raven/workspace/ofc/dev/Livastar'
 alias cpersonal='cd /home/raven/workspace/privateOutcast'
 

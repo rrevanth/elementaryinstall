@@ -62,13 +62,13 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 curl -sSL https://get.rvm.io | bash -s stable --autolibs=enabled --rails --ruby
 
 # NVM and node install
-curl https://raw.githubusercontent.com/creationix/nvm/v0.11.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
 source $HOME/.profile
 nvm install 0.10.40
 nvm alias default 0.10.40
 nvm use default
 
-sudo /usr/share/doc/libdvdread4/install-css.s­h	# Enable DVD Playback
+sudo /usr/share/doc/libdvdread4/install-css.sh	# Enable DVD Playback
 sudo apt-get install ttf-mscorefonts-installer	# Microsoft Fonts
 sudo apt-get install libavcodec-extra-53		# Itunes compatibility Codec
 sudo apt-get install bleachbit					# System Cleaner BleachBit
